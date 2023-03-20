@@ -1,0 +1,20 @@
+<div>
+  <div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+        <label for="title">New register</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          required
+          [(ngModel)]="tipo"
+          name="tipo"
+        />
+      </div>
+
+      <button (click)="saveTutorial()" class="btn btn-success">Insert</button>
+    </div>
+ 
+  </div>
+</div>
